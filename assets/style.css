@@ -4,23 +4,25 @@
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif
   }
-img {display:block}
 
 body {
-  background-color: rgb ();
+  background-color: #fafafa;
+
+ /* Navigation Bar */
  
 }
 header {
     padding: 40px;
-    background-color: rgb(244, 238, 230);
-   
-
+    background-color:rgb(244, 238, 230);
+    position: relative;
 }
 
 nav {
   margin-right: 20px;
-  float: right;
   font-size:2rem;
+  position:absolute; 
+  bottom:20px;
+  right: 50px;
 }
 
 nav a {
@@ -35,7 +37,9 @@ nav a:hover {
   color: coral;
 }
 
-.background {
+/*Body Content*/
+
+#background {
   margin-top:30px;
   border: 3px solid black;
   padding-top: 30px;
@@ -44,15 +48,16 @@ nav a:hover {
   background-image: url(../assets/background.jpg);
   background-size: cover;
 }
+        /*Top image space under navigation bar*/
 
-.sub-header {
+#sub-header {
   padding: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
  
-.profile-img {
+#profile-img {
   margin-bottom: 30px;
   width: 70%;
   height: auto;
@@ -61,25 +66,29 @@ nav a:hover {
   border-radius: 50%;
 }
 
-.my-name {
+#my-name {
   font-size: 8rem;
   text-shadow: 1px 1px 2px rgb(81, 79, 79);
 }
 
 .content h2{
-   font-size:2rem;
+   font-size:3rem;
+   padding: 20px;
 
 }
+      /*About Me Section*/
 
 .content {
   margin: 50px;
   padding: 20px;
   background-color: rgb(244, 238, 230);
+  box-shadow: 5px 5px 10px 2px  gray;
 }
 
 .pam {
   padding:10px;
   line-height: 1.5;
+  font-size: 2rem;;
 }
 
 p span {
@@ -88,19 +97,72 @@ p span {
   color: coral;
 }
 
-a img {
-  width: 25%;
+             /*Projects Section*/
+#projects div{
+  display: flex;
+  
+ 
+}
+
+#projects img { 
+  margin:10px;
+  padding:5px;
+  border: 5px solid black ;
+  box-shadow: 5px 5px 10px 2px  gray;
+}
+
+#challenge {
+  width: 70%;
   height: auto;
-  margin:20px;
-  padding:15px;
-  border: 3px solid black ;
 }
 
-a img:hover {
-  border: 3px solid coral;
+#spa {
+  width: 45%;
+  height: auto;
 }
 
-div.flex-container {
-  display:flex;
-  flex-flow: wrap;
+#progress {
+  width: 120%;
+  height: auto;
 }
+
+
+#challenge:hover,
+#spa:hover, #progress:hover {
+  border: 5px solid coral;
+}
+
+          /*Contact Me Section*/
+
+
+#information {
+   display: flex;
+   justify-content: center;
+   font-size: 2rem;
+}
+#information a{
+  padding: 40px;
+}
+#github{
+  width: 100px;
+  height: 100px;
+}
+
+/* Media
+
+
+Tablets - header changes color 
+@media screen and (max-width: 992px) {
+  
+  }
+
+
+/* Large smartphones - navbar changes color 
+@media screen and (max-width: 768px) 
+  
+  
+
+
+/* Small smartphones - image placeholders change color 
+@media screen and (max-width: 576px) */
+ 
