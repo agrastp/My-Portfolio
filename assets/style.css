@@ -1,12 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-  }
-
 body {
+  min-height: 100vh;
   background-color: #fafafa;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 
  /* Navigation Bar */
  
@@ -15,6 +10,7 @@ header {
     padding: 40px;
     background-color:rgb(244, 238, 230);
     position: relative;
+ 
 }
 
 nav {
@@ -43,9 +39,8 @@ nav a:hover {
   margin-top:30px;
   border: 3px solid black;
   padding-top: 30px;
-  min-width: 100px;
   background-repeat: no-repeat;
-  background-image: url(../assets/background.jpg);
+  background-image: url(../images/background.jpg);
   background-size: cover;
 }
         /*Top image space under navigation bar*/
@@ -55,6 +50,7 @@ nav a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-shrink: 1;
 }
  
 #profile-img {
@@ -97,72 +93,186 @@ p span {
   color: coral;
 }
 
-             /*Projects Section*/
-#projects div{
-  display: flex;
+      /*Projects Section*/
+
+#project-links {
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  row-gap: 10px;
   
- 
 }
 
-#projects img { 
-  margin:10px;
-  padding:5px;
-  border: 5px solid black ;
-  box-shadow: 5px 5px 10px 2px  gray;
+#imgHolder {
+  position: relative;
 }
 
-#challenge {
-  width: 70%;
-  height: auto;
+#imgHolder span {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+
 }
 
-#spa {
-  width: 45%;
-  height: auto;
+.link{
+ margin: 30px;
+ padding:10px;
+ border: 5px solid black;
 }
 
-#progress {
-  width: 120%;
-  height: auto;
-}
-
-
-#challenge:hover,
-#spa:hover, #progress:hover {
+.link:hover {
   border: 5px solid coral;
+  transform: scale(1.10);
 }
 
-          /*Contact Me Section*/
 
+figcaption {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/*Contact Me Section*/
 
 #information {
-   display: flex;
-   justify-content: center;
-   font-size: 2rem;
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  row-gap: 10px;
+            
 }
-#information a{
-  padding: 40px;
-}
-#github{
-  width: 100px;
-  height: 100px;
+          
+.media{
+  margin: 30px;
+  padding:10px;
 }
 
-/* Media
 
+/* || SMALL */
+@media screen and (max-width: 576px) {
+ 
+  
+  .pam {
+    padding:15px;
+    font-size: 15px;
+  }
 
-Tablets - header changes color 
-@media screen and (max-width: 992px) {
+  nav {
+    margin: 5px;
+    padding: 5px;
+    font-size:15px;
+    bottom:20px;
+    right: 90px;
+
+  }
+  #my-name {
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(81, 79, 79);
+    padding-right: 50px;
+    margin-right: 10px;
+  } 
+
+  .content h2{
+    font-size:20px;
+    padding: 5px;
+
+  }
+   
+  .media{
+    margin: 5px;
+    padding:5px;
   
   }
 
+    .link:hover {
+      border: 5px solid coral;
+    }
 
-/* Large smartphones - navbar changes color 
-@media screen and (max-width: 768px) 
+  }
   
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+  .pam {
+    padding:15px;
+    font-size: 25px;
+  }
+
+  nav {
+    margin: 5px;
+    padding: 5px;
+    font-size:25px;
+    bottom:20px;
+    right: 90px;
+
+  }
+  #my-name {
+    font-size: 50px;
+    text-shadow: 1px 1px 2px rgb(81, 79, 79);
+    padding-right: 50px;
+    margin-right: 60px;
+  } 
+
+  .content h2{
+    font-size:30px;
+    padding: 5px;
+
+  }
+   
+  .media{
+    margin: 5px;
+    padding:5px;
   
+  }
 
+    .link:hover {
+      border: 5px solid coral;
+    }
 
-/* Small smartphones - image placeholders change color 
-@media screen and (max-width: 576px) */
+  }
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
  
+  .pam {
+    padding-top:20px;
+    font-size: 35px;
+  }
+
+  nav {
+    margin: 5px;
+    padding: 5px;
+    font-size:35px;
+    bottom:20px;
+    right: 120px;
+
+  }
+  #my-name {
+    font-size: 100px;
+    text-shadow: 1px 1px 2px rgb(81, 79, 79);
+    padding-right: 50px;
+    margin-right: 60px;
+  } 
+
+  .content h2{
+    font-size:40px;
+    padding: 5px;
+
+  }
+   
+  .media{
+    margin: 5px;
+    padding:10px;
+  
+  }
+
+    .link:hover {
+      border: 5px solid coral;
+    }
+
+  }
+
+  
+ 
+/*Note: I had to add the hover selector to all sizes, otherwise it was not working.*/
+  
