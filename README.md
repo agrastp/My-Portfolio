@@ -3,7 +3,7 @@
 
 ## Description
 
-This is my working portfolio all about me, links to my work, and how to contact me.This project motivated me as a future developer in researching and learning more about different key elements of CSS.  There were many hours of exploration, experimentation, and research to work on getting my website working correctly.  This project also allowed me to understand areas I need to work on more in order for me to create better working sites.  
+This is my working portfolio all about me, links to my work, and how to contact me.This project motivated me as a future developer in researching and learning more about different key elements of CSS.  There were many hours of exploration, experimentation, and research to get my website working correctly and to the best of my current ability.  This project also gave me insight on areas I need to spend more time exploring and practicing.
 
 ## Installation
 
