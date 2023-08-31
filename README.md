@@ -15,7 +15,7 @@ This project will be the start to my future portfolio when I am job searching.  
 
 ## Webpage Image
 
-![Webpage Image](images/Webpage-Layout.jpg?raw=true "Webpage Image")
+![Webpage Image](./images/Portfolio-Screenshot.png?raw=true "Webpage Image")
 
 ## Credits
 
