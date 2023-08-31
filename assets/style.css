@@ -103,17 +103,6 @@ p span {
   
 }
 
-#imgHolder {
-  position: relative;
-}
-
-#imgHolder span {
-  position: absolute;
-  right: 30px;
-  top: 10px;
-
-}
-
 .link{
  margin: 30px;
  padding:10px;
